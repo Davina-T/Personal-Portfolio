@@ -64,7 +64,7 @@ ol.carousel-indicators {
     top: 10%;
     left: 40%;
     width: auto;
-
+    max-height: 60px;
 }
 
 ol.carousel-indicators li {
@@ -93,6 +93,14 @@ ol.carousel-indicators li.active {
     max-height: 100px;
 }
 
+.profile-picture {
+    height: 300px;
+    border-radius: 50px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
 .slide-container1 {
     position: absolute;
     top: 30%;
@@ -116,12 +124,23 @@ ol.carousel-indicators li.active {
     max-width: 580px;
 }
 
-.profile-picture {
-    height: 300px;
-    border-radius: 50px;
-    position: absolute;
-    top: 30%;
-    left: 70%;
+.container1-paragraph2 {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    max-width: 580px;
+}
+
+
+.container1-paragraph2 a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #60B0F4;
+}
+
+.container1-paragraph2 a:hover {
+    color: rgb(12, 72, 124);
+    transition: .4s ease-in-out;
 }
 
 /*--------- Footer ---------*/
