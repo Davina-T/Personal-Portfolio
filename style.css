@@ -1,0 +1,218 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/*--------- Background ---------*/
+
+.home-background {
+    background-image: url("img/home-background.jpg");
+    background-color: white;
+    height: 100%;
+    min-height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+  
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 85%;
+    max-height: 700px;
+}
+
+/*--------- Carousel ---------*/
+
+.carousel-image {
+    max-height: 700px;
+    min-height: 700px;
+    border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #60B0F4;
+    width: 30px;
+    height: 30px;
+}
+
+/*--------- First Slide ---------*/
+
+.logo-image {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    max-height: 100px;
+}
+
+.slide-container1 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+.slide-container1 h1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 32px;
+}
+
+.full-name {
+    color: #60B0F4; 
+    font-size: 36px;
+    font-family: 'Pacifico', cursive;
+}
+
+.container1-paragraph {
+    margin-top: 40px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    max-width: 580px;
+}
+
+.profile-picture {
+    height: 300px;
+    border-radius: 50px;
+    position: absolute;
+    top: 30%;
+    left: 70%;
+}
+
+/*--------- Footer ---------*/
+
+.slide-footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #60B0F4;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.slide-footer p {
+    font-size: 14px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 0 0.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    background: #EACDCF;
+}
+
+.slide-footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.fa-envelope.colour, .fa-github.colour, .fa-linkedin-in.colour {
+    color: white;
+    transition: .4s ease;
+}
+
+break {
+    flex-basis: 100%;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+
+.tooltip {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/*--------- Responsive ---------*/
+
+@media screen and (max-width: 1240px) {
+    .container1-paragraph {
+        max-width: 400px;
+    }
+
+    .slide-container1 {
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+
+    .profile-picture {
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .container1-paragraph {
+        font-size: 16px;
+        max-width: 280px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .profile-picture {
+        display: none;
+    }
+
+    .container1-paragraph {
+        font-size: 18px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container1-paragraph {
+        font-size: 16px;
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container1-paragraph {
+        font-size: 14px;
+        max-width: 250px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .slide-container1 h1 {
+        font-size: 26px;
+    }
+    
+    .full-name {
+        font-size: 30px;
+    }
+}
