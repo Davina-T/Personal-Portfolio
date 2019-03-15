@@ -1,0 +1,347 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    position: relative;
+}
+
+.navbar {
+    overflow: hidden;
+    font-size: 18px;
+    transition: 0.8s ease;
+}
+
+.navbar.colour {
+    background-color: #7aa2ff;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.icon-bar {
+    background-color: white;
+}
+
+.navbar-collapse li {
+    padding: 12px 0;
+    text-align: right;
+}
+
+.navbar a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar .nav-link:hover {
+    color: #BADDC9;
+    border-bottom: 5px solid #E5C7A0;
+    transition: .4s ease-out;
+    max-height: 43px;
+}
+
+.navbar a.active {
+    color: white;
+}
+
+#home {
+    background: url(img/kaihiro-background.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home-title {
+    font-weight: bold;
+    font-size: 80px;
+    color: black;
+}
+
+.padding {
+    padding: 80px 0;
+}
+
+.padding-products {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+.padding img {
+    width: 100%;
+}
+
+.about-us {
+    padding-top: 10px;
+}
+
+.about-title {
+    font-weight: bold;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+hr {
+    width: 80%;
+    height: 5px;
+    margin: 20px auto;
+    border: 0;
+    background: #c7d8ff;
+}
+
+.fas {
+    margin-bottom: 20px;
+}
+
+.product-description {
+    font-size: 18px;
+    padding: 0px 15px 0px 15px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.cardrow2 {
+    margin: 40px 0;
+}
+
+.card figure {
+    background: #7aa2ff;
+}
+
+.cardimg {
+    transition: .4s ease-out;
+}
+
+.cardimg:hover {
+    opacity: .5;
+}
+
+#fixed {
+    background: url(img/reviews-background.jpg) no-repeat center center fixed;
+    display: table;
+    height: 60%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+#fixed:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(122, 162, 255, 0.5);
+    z-index: 999;
+    transition: .8s ease;
+}
+
+#fixed:hover:before {
+    background: none;
+}
+
+.reviews {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 100px;
+}
+
+.reviews-title {
+    font-weight: bold;
+}
+
+.reviews-text {
+    font-size: 20px;
+}
+
+ /*
+.reviews-text-small {
+    padding: 0 250px;
+    font-size: 16px;
+    font-style: italic;
+} */
+
+.shop-title {
+    font-weight: bold;
+}
+
+.shop-options {
+    margin-top: 20px;
+}
+
+.shop-icon {
+    color: #7aa2ff;
+    transition: .8s ease;
+}
+
+.shop-options i:hover {
+    color: #F29999;
+} 
+
+footer {
+    text-align: center;
+    background-color: #7aa2ff;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-height: 150px;
+}
+
+.contact-title {
+    font-weight: bold;
+}
+
+.contact-us i {
+    color: black;
+    margin: 0 30px;
+}
+
+.contact-us i:hover {
+    padding-bottom: 10px;
+    color: #BADDC9;
+    border-bottom: 5px solid #E5C7A0;
+    transition: .4s ease-out;
+}
+
+.copyright {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #485c96;
+    color: black;
+}
+
+/* Responsive */
+
+/* ----------- Mobile  ----------- */
+
+@media screen and (max-width: 576px) {
+    #home {
+        background: rgb(247, 210, 255);
+    }
+
+    #fixed {
+        background: #7aa2ff;
+    }
+    
+    #fixed:before {
+        background: none;
+    }
+
+    .home-title {
+        font-size: 60px;
+    }
+
+    .reviews {
+        padding: 0 50px;
+    }
+    
+    .reviews-text{
+        font-size: 14px;
+    }
+
+    .reviews-title {
+        font-size: 20px;
+    }
+
+    .reviews-text-small {
+        font-size: 12px;
+    }
+}
+
+/* ----------- iPad  ----------- */
+
+@media screen and (max-width: 768px) {
+    #home {
+        background: rgb(247, 210, 255);
+    }
+
+    #fixed {
+        background: #7aa2ff;
+    }
+    
+    #fixed:before {
+        background: none;
+    }
+
+    .aboutus-image {
+        padding: 40px 35px;
+    }
+
+    .about-us {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    
+    .about-title {
+        text-align: center;
+    }
+}
+
+/* ----------- Desktops ----------- */
+
+@media screen and (max-width: 992px) {
+    #home {
+        background: rgb(247, 210, 255);
+    }
+
+    #fixed {
+        background: none;
+    }
+
+    .aboutus-image {
+        padding: 40px 35px;
+    }
+
+    .about-us {
+        padding-right: 35px;
+        padding-left: 35px;
+    }
+    
+    .about-title {
+        text-align: center;
+    }
+
+    #fixed {
+        background: #7aa2ff;
+    }
+    
+    #fixed:before {
+        background: none;
+    }
+}
+
+/* ----------- Large Desktops  ----------- */
+
+@media screen and (max-width: 1200px) {
+    .aboutus-image {
+        padding-top: 80px;
+    }
+}

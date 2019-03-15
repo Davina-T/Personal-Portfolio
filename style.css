@@ -143,6 +143,23 @@ ol.carousel-indicators li.active {
     transition: .4s ease-in-out;
 }
 
+/*--------- Second Slide ---------*/
+
+.slide-container2 {
+    position: absolute;
+    top: 30%;
+    left: 55%;
+}
+
+.card {
+    background-color: #60B0F4;
+    width: 350px;
+    color: white;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    box-shadow: 0px 8px 20px #0000007a;
+    border: none;
+}
+
 /*--------- Footer ---------*/
 
 .slide-footer {

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en" class="sr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial=scale=1">
+
+        <title>TeppanyakiBar</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Fira+Sans+Condensed|Satisfy|Staatliches" rel="stylesheet">
+        <link href="teppanyaki.css" rel="stylesheet"/>
+        <link href="animate.css" rel="stylesheet"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar-collapse-main" data-offset="250">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-custom navbar-expand-lg fixed-top" role="navigation">
+            <a class="navbar-brand" href="#home"><img src="img/teppanyaki-logo.png"></a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse-main">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-main">
+                <ul class="nav navbar-nav">
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#history">Our History</a></li>
+                    <li><a class="nav-link" href="#menu">Menu</a></li>
+                    <li><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Home -->
+        <div id="home">
+            <div class="home-text">
+                <img class="ipad-logo" src="img/teppanyaki-logo-alone.png"></img>
+                <h1 class="home-title animated fadeInUp">Teppanyaki Bar</h1>
+                <hr id="home-hr" class="animated slideInRight">
+                <h3 class="home-phrase animated fadeInUp">Delicious Japanese Cousine</h3>
+            </div>
+        </div>
+
+        <!-- Line Separator -->
+        <div class="ipad-line-break">
+                <div class="left-separator">
+                    <hr id="separator">
+                </div>
+                <div class="right-separator">
+                    <hr id="separator">
+                </div>
+            </div>
+        </div>
+
+        <!-- History -->
+        <section>
+        <div class="padding" id="history">
+            <div class="container">
+                <div class="row">
+                    <div class="history-box load-hidden col-lg-6 col-md-12 col-sm-12">
+                        <h1 class="history-title">Our History</h1>
+                        <hr id="history-hr">
+                        <p class="history-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar sed mi vel eleifend. Nulla ac leo non magna placerat pretium vitae nec velit. Aenean mollis ligula vitae elementum laoreet. In tincidunt lectus et lorem aliquam, vitae tristique nulla imperdiet. In eu dictum elit. Morbi luctus velit vitae lacus venenatis gravida. Aenean dictum dignissim elit, sit amet faucibus purus efficitur ut. Vivamus eu interdum ante, sit amet aliquet libero.</p>
+                    </div>
+                    <div class="history-image load-hidden col-lg-6 col-md-12 col-sm-12">
+                        <img src="img/history-img.jpg" class="history-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Line Separator -->
+        <div class="ipad-line-break">
+                <div class="left-separator">
+                    <hr id="separator">
+                </div>
+                <div class="right-separator">
+                    <hr id="separator">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div id="image-section1"></div>
+
+        <!-- Menu -->
+        <div class="padding" id="menu">
+            <div class="container" id="menuCollapse">
+                <div class="row">
+                    <div class="menu-box col-lg-12 col-md-12 col-sm-12">
+                        <h1 class="menu-title">Our Menu</h1>
+                        <hr id="menu-hr">
+                    </div>
+                </div>
+
+                <!-- Menu buttons -->
+                <div class="row menu-buttons">
+                    <button class="btn btn-link colour" type="button" data-toggle="collapse" data-target="#banquets" aria-expanded="false" aria-controls="banquets">
+                    Banquets
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#alacarte" aria-expanded="false" aria-controls="alacarte">
+                    À la carte
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#lunchSpecial" aria-expanded="false" aria-controls="lunchSpecial">
+                    Lunch Special
+                    </button>
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#kidsMeal" aria-expanded="false" aria-controls="kidsMeal">
+                    Kids
+                    </button>
+                </div>
+
+                <!-- Banquet section -->
+                <div class="collapse show" id="banquets" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="banquet-text">All Banquets Served with (optional):</h3>
+                            <ul>
+                                <li>Salad</li>
+                                <li>Prawn Appetiser</li>
+                                <li>Miso Soup</li>
+                                <li>Fried/Steamed Rice</li>
+                                <li>Hibachi Vegetables</li>
+                                <li>Ice Cream</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">A. Teppanyaki Special</h3>
+                            <p class="menu-description">Teriyaki Chicken & Hibachi Snapper</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$39.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">F. Chef's Specialty</h3>
+                            <p class="menu-description">Hibachi King Prawns & Fillet Mignon</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$55.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">B. Cleveland Special</h3>
+                            <p class="menu-description">Fillet Mignon & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$46.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">G. Moreton Bay Blend</h3>
+                            <p class="menu-description">Moreton Bay Bugs, Hibachi Salmon & Hibachi Scallops</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$67.50</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">C. Raby Bay Delight</h3>
+                            <p class="menu-description">Hibachi King Prawns & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$48.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">H. Seafood Harmony</h3>
+                            <p class="menu-description">Lobster Tail, Hibachi King Prawns & Hibachi Snapper</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$76.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">D. Pacific Pleaser</h3>
+                            <p class="menu-description">Hibachi Salmon & Fillet Mignon</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$49.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">I. VIP Specialty</h3>
+                            <p class="menu-description">Lobster Tail, Fillet Mignon, Hibachi Scallops & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$89.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">E. Redland Delight</h3>
+                            <p class="menu-description">Moreton Bay Bugs & Teriyaki Chicken</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$52.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">J. Vegetable Banquet</h3>
+                            <p class="menu-description">Seasonal Vegetables</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$29.50</h3>
+                        </div>
+                    </div>  
+                </div>
+
+                <!-- Alacarte section -->
+                <div class="collapse" id="alacarte" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="alacarte-text">Main Meals</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Vegetarian Meal</h3>
+                            <p class="menu-description">Seasonal garden-fresh vegetables</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$16.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Scallops</h3>
+                            <p class="menu-description">Mouth-watering scallops</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$32.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Teriyaki Chicken</h3>
+                            <p class="menu-description">Tender Chicken with Teriyaki Sauce</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$22.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi King Prawns</h3>
+                            <p class="menu-description">Scrumptious prawns with special Prawn Sauce</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$32.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Snapper</h3>
+                            <p class="menu-description">Seasonal fresh white fish</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$22.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Moreton Bay Bugs</h3>
+                            <p class="menu-description">Luscious bugs</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$39.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Salmon</h3>
+                            <p class="menu-description">Fresh and tasty pink fish</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$26.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Lobster Tail</h3>
+                            <p class="menu-description">Delicious lobster</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$47.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Fillet Mignon</h3>
+                            <p class="menu-description">Delectable beef</p>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$27.50</h3>
+                        </div>
+                    </div>
+
+                    <div class="row side-dishes">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="alacarte-text">Side Dishes</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Steamed Rice <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.00</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Salad <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Miso Soup <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Hibachi Vegetables <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$5.50</h3>
+                        </div>
+                    </div>                     
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Fried Rice <em>(One bowl)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$5.50</h3>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Prawn Appetiser <em>(Entree)</em></h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$8.50</h3>
+                        </div>
+                    </div> 
+
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-10 col-10">
+                            <h3 class="menu-headings">Ice Cream</h3>
+                            <p class="menu-description">Chocolate, Vanilla or Green Tea ice cream</h3>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-2">
+                            <h3 class="menu-price">$3.50</h3>
+                        </div>
+                    </div>                                         
+                </div>
+
+                <!-- Lunch section -->
+                <div class="collapse" id="lunchSpecial" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="lunch-kids-price">$26.50</h3>
+                            <p class="lunch-kids-text">(11:30AM-2:00PM)</p>
+                        </div>
+                    </div>
+
+                    <div class="row lunch-kids-items">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="menu-choice">Salad</h3>
+                            <h3 class="menu-choice">Fried Rice</h3>
+                            <h3 class="menu-choice">Hibachi Vegetables</h3>
+                            <h3 class="menu-choice">Ice Cream</h3>
+                            <h3 class="menu-word">with</h3>
+                            <h3 class="menu-option">Fillet Mignon & Snapper</h3>
+                            <h3 class="menu-word">or</h3>
+                            <h3 class="menu-option">Teriyaki Chicken & Prawns</h3>
+                        </div>
+                    </div> 
+                </div>
+
+                <!-- Kids section -->
+                <div class="collapse" id="kidsMeal" data-parent="#menuCollapse">
+                    <div class="row menu-box">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="lunch-kids-price">$17.50</h3>
+                            <p class="lunch-kids-text">(for children up to 12 years old)</p>
+                        </div>
+                    </div>
+
+                    <div class="row lunch-kids-items">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                            <h3 class="menu-option">Teriyaki Chicken</h3>
+                            <h3 class="menu-word">or</h3>
+                            <h3 class="menu-option">Hibachi Snapper</h3>
+                            <h3 class="menu-word">with</h3>
+                            <h3 class="menu-choice">Fried Rice</h3>
+                            <h3 class="menu-choice">Ice Cream</h3>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Line Separator -->
+        <div class="ipad-line-break">
+                <div class="left-separator">
+                    <hr id="separator">
+                </div>
+                <div class="right-separator">
+                    <hr id="separator">
+                </div>
+            </div>
+        </div>
+
+        <!-- Image section -->
+        <div id="image-section2">
+            `<div class="experience">
+                <h1 class="experience-text">An Unforgettable Experience</h1>
+            </div>`
+        </div> 
+
+        <!-- Gallery -->
+        <section>
+        <div class="padding" id="gallery">
+            <div class="container">
+                <div class="row gallery-box">
+                    <div class="gallery-image1 load-hidden col-lg-6 col-md-6 col-sm-6 col-12">
+                        <img src="img/gallery1.jpg" alt="Teppanyaki Bar">
+                    </div>
+                    <div class="gallery-image2 load-hidden col-lg-6 col-md-6 col-sm-6 col-12 wrapper-photo2">
+                        <img src="img/gallery2.jpg" alt="Teppanyaki Bar">
+                    </div>
+                </div>
+                <div class="row gallery-box2">
+                    <div class="gallery-image3 load-hidden col-lg-6 col-md-6 col-sm-6 col-12">
+                        <img src="img/gallery3.jpg" alt="Teppanyaki Bar">
+                    </div>
+                    <div class="gallery-image4 load-hidden col-lg-6 col-md-6 col-sm-6 col-12 gallery4">
+                        <img src="img/gallery4.jpg" alt="Teppanyaki Bar">
+                    </div>
+                </div>          
+            </div>
+        </div>
+        </section>
+
+        <!-- Business, Location -->
+
+        <div class="padding2" id="contact">
+            <div class="contact-container">
+            <div class="container container-align">
+                <div class="row">
+                    <div class="contactSection col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h3 class="location-heading">Address</h3>
+                            <div class="row">
+                                <div class="column col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="row">
+                                        <p class="location-text"><a target="_blank" class="address-link" href="https://goo.gl/maps/Wym8rJKnpQk"><i class="fas fa-map-marker-alt"></i></a></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="location-text"><i class="fas fa-phone"></i></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="location-text"><a target="_blank" href="https://www.facebook.com/teppanyakibarcleveland/"><i class="facebook-link fab fa-facebook-square"></i></a></p>
+                                    </div>
+                                </div>
+                                <div class="column col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                                    <div class="row">
+                                        <p class="time-heading1">TEPPANYAKI BAR</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="location-text1"><a target="_blank" class="address-link" href="https://goo.gl/maps/Wym8rJKnpQk">14/152-166 Shore Street <br>4163 Cleveland, Queensland</a></p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="location-text phone-number">(07) 3488 0768</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="location-text"><a target="_blank" class="facebook-link" href="https://www.facebook.com/teppanyakibarcleveland/">/teppanyakibarcleveland</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="contactSection col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12">
+                        <h3 class="location-heading business-title">Business Hours</h3>
+                            <div class="row">
+                                <div class="column col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2">
+                                    <div class="row">
+                                        <p class="location-text"><i class="fas fa-clock"></i></p>
+                                    </div>
+                                </div>
+                                <div class="column2 col-xl-9 col-lg-9 col-md-9 col-sm-9 col-8">
+                                    <div class="row">
+                                        <p class="time-heading">LUNCH</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="time-text">Saturday & Sunday
+                                        <br>
+                                        from 11:30am to 2pm</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="time-heading2">DINNER</p>
+                                    </div>
+                                    <div class="row">
+                                        <p class="time-text">Tuesday to Sunday
+                                        <br>
+                                        from 5:30pm to 9:30pm</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div>
+                        <img class="map" src="img/map.jpg">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h6 class="copyright-text">© Teppanyaki Bar, 2019. By Davina Tan</h6>
+        </footer>
+
+        <script src="teppanyaki.js"></script>
+    </body>
+
+</html>

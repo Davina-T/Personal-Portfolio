@@ -1,0 +1,732 @@
+html {
+    scroll-behavior: smooth;
+}
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Staatliches', cursive;
+    position: relative;
+}
+
+.padding {
+    padding: 60px 0;
+}
+
+.padding2 {
+    padding-top: 60px;
+}
+
+.padding img {
+    width: 100%;
+}
+
+section {
+    overflow: hidden;
+}
+
+/*--------- Scrollbar ---------*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px grey; 
+border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #96000F;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #b30000; 
+}
+
+/*--------- Navigation ---------*/
+
+.navbar {
+    overflow: hidden;
+    font-size: 20px;
+    transition: 0.6s ease;
+    transition: background-color 0.4s ease;
+    background-color: white;
+}
+
+.navbar-toggler-icon {
+    background-color: #96000F;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-collapse li {
+    padding: 12px;
+    text-align: center;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar a.active {
+    color: #96000F;
+}
+
+.navbar .nav-link:hover {
+    color: #96000F;
+    transition: .4s ease;
+}
+
+/*--------- Line separator ---------*/
+
+.ipad-line-break {
+    display: none;
+}
+
+#separator {
+    height: 10px;
+    margin: 20px auto;
+    border: 0;
+    background: #96000F;
+}
+
+.left-separator {
+    width: 45%;
+    float: left;
+}
+
+.right-separator {
+    width: 45%;
+    float: right;
+}
+
+/*--------- Home ---------*/
+
+#home {
+    background: url(img/teppanyaki-background.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    color: white;
+}
+
+.home-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.home-title {
+    /* -webkit-text-stroke: 1px white; */
+    color: #96000F;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-family: 'Satisfy', cursive;
+    -webkit-animation-delay: 0.5s;
+}
+
+#home-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em auto;
+    padding: 0;
+    width: 20%;
+    -webkit-animation-delay: 0.7s;
+}
+
+.home-phrase {
+    letter-spacing: 1px;
+    -webkit-animation-delay: 1.2s;
+}
+
+.ipad-logo {
+    display: none;
+}
+
+/*--------- History ---------*/
+
+.history-box {
+    margin-top: 80px;
+}
+
+.history-title {
+    text-align: center;
+    color: #96000F;
+    font-size: 60px;
+}
+
+#history-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em auto;
+    padding: 0;
+    width: 40%;    
+}
+
+.history-paragraph {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 80px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.history-img {
+    transform: scale(0.8);
+}
+
+/*--------- Image Section 1 ---------*/
+
+#image-section1 {
+    background: url(img/image-section1.jpg) no-repeat center center fixed;
+    display: table;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+/*--------- Menu ---------*/
+
+.menu-box {
+    margin-top: 40px;
+}
+
+.menu-title {
+    text-align: center;
+    color: #96000F;
+    font-size: 60px;
+}
+
+#menu-hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em auto;
+    padding: 0;
+    width: 15%;    
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-link {
+    font-size: 24px;
+    position: relative;
+    color: black;
+    margin: 0 20px;
+}
+
+.btn-link.colour {
+    color: #96000F;
+}
+
+.btn-link.colour2 {
+    color: black;
+}
+
+.btn-link:hover {
+    color: #96000F;
+    text-decoration: none;
+}
+
+.btn-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-link:hover:before {
+    visibility: visible;
+    background-color: black;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.btn-link:focus {
+    text-decoration: none;
+}
+
+.menu-box {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.banquet-text {
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.alacarte-text {
+    color: black;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.side-dishes {
+    text-align: center;
+}
+
+.menu-box ul {
+    list-style: none;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.menu-headings {
+    font-family: 'Caveat Brush', cursive;
+    color: black;
+}
+
+.menu-price {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    color: #96000F;
+}
+
+.menu-description {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+.menu-headings em {
+    font-size: 16px;
+}
+
+.lunch-kids-price {
+    font-family: 'Caveat Brush', cursive;
+    font-weight: bold;
+    color: #96000F;
+    font-size: 48px;
+}
+
+.lunch-kids-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+}
+
+.lunch-kids-items {
+    font-family: 'Caveat Brush', cursive;
+    color: black;
+    text-align: center;
+}
+
+.menu-word {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 18px;
+}
+
+.menu-option {
+    color: #96000F;
+}
+
+/*--------- Image Section 2 ---------*/
+
+#image-section2 {
+    background: url(img/image-section2.jpg) no-repeat center center fixed;
+    display: table;
+    height: 50%;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.experience {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Satisfy', cursive;
+}
+
+.experience-text {
+    font-size: 60px;
+    color: white;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+/*--------- Gallery ---------*/
+
+.gallery-box {
+    margin-top: 80px;
+    position: relative;
+}
+
+.gallery-box2 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.wrapper-photo2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/*--------- Contact ---------*/
+
+.column {
+    margin-top: 30px;
+}
+
+.column2 {
+    margin-top: 15px;
+}
+
+.contact-container {
+    background-color: #96000F;
+    padding: 40px 40px;
+    min-height: 600px;
+}
+
+.container-align {
+    margin-top: 50px;
+}
+
+.location-heading {
+    color: white;
+}
+
+.location-text1 {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.location-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.location-text i {
+    font-size: 30px;
+}
+
+.fa-phone {
+    margin-top: 50px;
+}
+
+.time-heading1 {
+    font-family: 'Staatliches', cursive;
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.time-heading2 {
+    font-family: 'Staatliches', cursive;
+    margin-top: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+.time-heading {
+    font-family: 'Staatliches', cursive;
+    margin-top: 35px;
+    color: white;
+    font-size: 24px;
+}
+
+.time-text {
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.map {
+    position: absolute;
+    max-width: 550px;
+}
+
+.facebook-link {
+    color: white;
+}
+
+.facebook-link.colour {
+    text-decoration: none;
+    color: #00B9FF;
+    transition: .6s ease;
+}
+
+.address-link {
+    color: white;
+}
+
+.address-link.colour {
+    text-decoration: none;
+    color: #00B9FF;
+    transition: .6s ease;
+}
+
+/*--------- Footer ---------*/
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer h6 {
+    margin-bottom: 0;
+    font-size: 12px;
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+/*--------- Responsive ---------*/
+
+/* Large Desktops */ 
+@media screen and (max-width: 1200px) {
+    .contact-container {
+        min-height: 950px;
+    }
+
+    .map {
+        max-width: 600px;
+        left:  20%;
+        margin-top: 350px;
+    }
+
+    .contactSection.col-lg-6 {
+        padding-left: 100px;
+    }
+}
+
+/* Ipad Landscape */
+@media screen and (max-width: 1024px) {
+    #home {
+        background: white;
+        color: black;
+        height: 60%;
+    }
+    
+    #home-hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 2px solid black;
+        margin: 1em auto;
+        padding: 0;
+        width: 20%;
+    }
+
+    .ipad-logo {
+        display: initial;
+    }
+
+    .ipad-line-break {
+        display: initial;
+    }
+
+    #image-section1 {
+        display: none;
+    }
+
+    #image-section2 {
+        display: none;
+    }
+}
+
+/* Desktops */
+@media screen and (max-width: 992px) {
+    /* history */
+    .history-box {
+        margin-top: 40px;
+    }
+
+    .history-title, .menu-title {
+        font-size: 40px;
+    }
+
+    #history-hr, #menu-hr {
+        width: 20%;
+    }
+
+    .history-paragraph {
+        font-size: 16px;
+        padding: 0 20px;
+    }
+
+    /* contact */
+    .contact-container {
+        min-height: 900px;
+    }
+
+    .map {
+        max-width: 550px;
+    }
+}
+
+/* Ipad */
+@media screen and (max-width: 768px) {
+    .home-title {
+        font-size: 60px;
+    }
+
+    .home-phrase {
+        font-size: 20px;
+    }
+
+    .location-text i {
+        font-size: 20px;
+    }
+
+    .time-heading, .time-heading1, .time-heading2, .btn-link {
+        font-size: 18px;
+    }
+
+    .location-text, .location-text1, .time-text, .menu-box ul, .menu-word {
+        font-size: 14px;
+    }
+
+    .banquet-text, .menu-description {
+        font-size: 16px;
+    }
+    
+    .menu-headings, .menu-price, .menu-choice, .menu-option {
+        font-size: 22px;
+    }
+
+    .lunch-kids-price {
+        font-size: 36px;
+    }
+
+    #banquets, #alarcarte, #lunchSpecial, #kidsMeal {
+        padding: 0 15px;
+    }
+
+    .fa-phone {
+        margin-top: 60px;
+    }
+
+    .map {
+        max-width: 450px;
+    }
+
+    .contact-container {
+        min-height: 820px;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 576px) {
+    .home-title {
+        font-size: 40px;
+    }
+
+    .home-phrase {
+        font-size: 18px;
+    }
+
+    .wrapper-photo2 {
+        position: relative;
+        margin-top: 40px;
+    }
+
+    .gallery4 {
+        margin-top: 20px;
+    }
+
+    .business-title {
+        margin-top: 40px;
+    }
+
+    .location-heading {
+        font-size: 24px;
+    }
+
+    .location-text, .location-text1, .time-text {
+        font-size: 16px;
+    }
+
+    .map {
+        margin-top: 360px;
+        left: 10%;
+    }
+
+    .fa-phone {
+        margin-top: 70px;
+    }
+
+    .contact-container {
+        min-height: 1150px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .map {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .fa-phone {
+        margin-top: 65px;
+    }
+
+    .map {
+        margin-top: 360px;
+        max-width: 360px;
+        left: 10px;
+    }
+
+    .menu-box ul {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container-align {
+        margin-left: 20px;
+    }
+
+    .map {
+        margin-top: 360px;
+        max-width: 340px;
+        left: 10px;
+    }
+    
+    .menu-price {
+        font-size: 18px;
+    }
+
+    .contactSection.col-lg-6 {
+        padding-left: 0px;
+    }
+}
