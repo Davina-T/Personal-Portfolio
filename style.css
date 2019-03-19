@@ -41,6 +41,7 @@ body {
     width: 85%;
     height: 85%;
     max-height: 700px;
+    max-width: 1300px;
 }
 
 /*--------- Carousel ---------*/
@@ -166,50 +167,38 @@ ol.carousel-indicators li.active {
     border: none;
 }
 
-/*--------- Second Slide ---------*/
+/*--------- Third Slide ---------*/
 
 .slide-heading {
     font-family: 'Fira Sans Condensed', sans-serif;
     font-weight: bold;
     position: absolute;
-    top: 25%;
-    left: 20%;
+    top: 30%;
+    left: 40%;
+    color: #60B0F4;
 }
 
 .contact-container {
     position: absolute;
-    top: 35%;
-    left: 20%;
+    top: 40%;
+    left: 45%;
 }
 
-.contact-form {
-    width: 600px;
+.contact-icon {
+    font-size: 116px;
+    color: #60B0F4;
 }
 
-.contact-text, .message-text {
-    width: 600px;
-    min-height: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px outset rgb(168, 168, 168);
-    box-shadow: 0px 8px 20px #4583b67a;
-    border-radius: 5px;
-    font-family: 'Fira Sans Condensed', sans-serif;
+.contact-icon:hover {
+    color: rgb(12, 72, 124);
+    transition: .4s ease;
 }
 
-.message-text {
-    min-height: 100px;
-}
-
-.contact-button {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    border-radius: 5px;
-    background-color: #10395a7a;
-    color: white;
-    height: 50px;
-    width: 130px;
+.contact-background {
+    position: absolute;
+    top: 22%;
+    width: 1500px;
+    border-radius: 10px;
 }
 
 /*--------- Footer ---------*/
@@ -269,12 +258,6 @@ break {
 
 /*--------- Responsive ---------*/
 
-@media screen and (min-width: 1900px) {
-    .card-container1 {
-        left: 30%;
-    }
-}
-
 @media screen and (max-width: 1240px) {
     .container1-paragraph {
         max-width: 400px;
@@ -326,6 +309,14 @@ break {
 
     .card-text {
         font-size: 14px;
+    }
+
+    .slide-heading {
+        left: 33%;
+    }
+
+    .contact-container {
+        left: 40%;
     }
 }
 
@@ -379,6 +370,10 @@ break {
         font-size: 16px;
         max-width: 300px;
     }
+
+    .slide-heading {
+        left: 30%;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -425,5 +420,13 @@ break {
 
     .card-container1, .card-container2 {
         left: 20%
+    }
+
+    .slide-heading {
+        left: 20%;
+    }
+
+    .contact-container {
+        left: 35%;
     }
 }
