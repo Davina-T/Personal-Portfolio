@@ -1,432 +1,438 @@
-html, body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+	height: 100%;
+	width: 100%;
 }
 
 body {
-    margin: 0;
+	margin: 0;
 }
 
 /*--------- Background ---------*/
 
 .home-background {
-    background-image: url("img/home-background.jpg");
-    background-color: white;
-    height: 100%;
-    min-height: 900px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+	background-image: url("img/home-background.jpg");
+	background-color: white;
+	height: 100%;
+	min-height: 900px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
 }
 
 .outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+	display: table;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
 }
-  
+
 .middle {
-    display: table-cell;
-    vertical-align: middle;
+	display: table-cell;
+	vertical-align: middle;
 }
-  
+
 .inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
-    height: 85%;
-    max-height: 700px;
-    max-width: 1300px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	height: 85%;
+	max-height: 700px;
+	max-width: 1300px;
 }
 
 /*--------- Carousel ---------*/
 
 .carousel-image {
-    max-height: 700px;
-    min-height: 700px;
-    border-radius: 10px;
+	max-height: 700px;
+	min-height: 700px;
+	border-radius: 10px;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: #60B0F4;
-    width: 30px;
-    height: 30px;
+	background-color: #60b0f4;
+	width: 30px;
+	height: 30px;
 }
 
 ol.carousel-indicators {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    position: absolute;
-    top: 10%;
-    left: 40%;
-    width: auto;
-    max-height: 60px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	position: absolute;
+	top: 10%;
+	left: 40%;
+	width: auto;
+	max-height: 60px;
 }
 
 ol.carousel-indicators li {
-    text-indent: unset;
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
-    border:none!important;
-    background:none!important;
+	text-indent: unset;
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px;
+	border: none !important;
+	background: none !important;
 }
 
 ol.carousel-indicators li.active {
-    color: #60B0F4;
+	color: #60b0f4;
 }
 
 .carousel-inner {
-    border-radius: 10px;
+	border-radius: 10px;
 }
 
 /*--------- First Slide ---------*/
 
 .logo-image {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    max-height: 100px;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	max-height: 100px;
 }
 
 .profile-picture {
-    height: 300px;
-    border-radius: 50px;
-    position: absolute;
-    top: 30%;
-    left: 70%;
+	height: 300px;
+	border-radius: 50px;
+	position: absolute;
+	top: 30%;
+	left: 70%;
 }
 
 .slide-container1 {
-    position: absolute;
-    top: 30%;
-    left: 15%;
+	position: absolute;
+	top: 30%;
+	left: 15%;
 }
 
 .slide-container1 h1 {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-size: 32px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-size: 32px;
 }
 
 .full-name {
-    color: #60B0F4; 
-    font-size: 36px;
-    font-family: 'Pacifico', cursive;
+	color: #60b0f4;
+	font-size: 36px;
+	font-family: 'Pacifico', cursive;
 }
 
 .container1-paragraph {
-    margin-top: 40px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    max-width: 580px;
+	margin-top: 40px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	max-width: 580px;
 }
 
 .container1-paragraph2 {
-    margin-top: 40px;
-    font-size: 20px;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    max-width: 580px;
+	margin-top: 40px;
+	font-size: 20px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	max-width: 580px;
 }
 
-
 .container1-paragraph2 a {
-    font-weight: bold;
-    text-decoration: none;
-    color: #60B0F4;
+	font-weight: bold;
+	text-decoration: none;
+	color: #60b0f4;
 }
 
 .container1-paragraph2 a:hover {
-    color: rgb(12, 72, 124);
-    transition: .4s ease-in-out;
+	color: rgb(12, 72, 124);
+	transition: .4s ease-in-out;
 }
 
 /*--------- Second Slide ---------*/
 
 .card-container1 {
-    position: absolute;
-    top: 30%;
-    left: 15%;
+	position: absolute;
+	top: 30%;
+	left: 15%;
 }
 
 .card-container2 {
-    position: absolute;
-    top: 30%;
-    left: 55%;
+	position: absolute;
+	top: 30%;
+	left: 55%;
 }
 
 .card {
-    background-color: #60B0F4;
-    width: 350px;
-    color: white;
-    font-family: 'Fira Sans Condensed', sans-serif;
-    box-shadow: 0px 8px 20px #0000007a;
-    border: none;
+	background-color: #60b0f4;
+	width: 350px;
+	color: white;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	box-shadow: 0px 8px 20px #0000007a;
+	border: none;
 }
 
 /*--------- Third Slide ---------*/
 
 .slide-heading {
-    font-family: 'Fira Sans Condensed', sans-serif;
-    font-weight: bold;
-    position: absolute;
-    top: 30%;
-    left: 40%;
-    color: #60B0F4;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	font-weight: bold;
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	color: #60b0f4;
 }
 
 .contact-container {
-    position: absolute;
-    top: 40%;
-    left: 45%;
+	position: absolute;
+	top: 40%;
+	left: 45%;
 }
 
 .contact-icon {
-    font-size: 116px;
-    color: #60B0F4;
+	font-size: 116px;
+	color: #60b0f4;
 }
 
 .contact-icon:hover {
-    color: rgb(12, 72, 124);
-    transition: .4s ease;
+	color: rgb(12, 72, 124);
+	transition: .4s ease;
 }
 
 .contact-background {
-    position: absolute;
-    top: 22%;
-    width: 1500px;
-    border-radius: 10px;
+	position: absolute;
+	top: 22%;
+	width: 1500px;
+	border-radius: 10px;
 }
 
 /*--------- Footer ---------*/
 
 .slide-footer {
-    position: absolute;
-    bottom: 0px;
-    background-color: #60B0F4;
-    width: 100%;
-    height: 70px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    font-family: 'Fira Sans Condensed', sans-serif;
+	position: absolute;
+	bottom: 0px;
+	background-color: #60b0f4;
+	width: 100%;
+	height: 70px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .slide-footer p {
-    font-size: 14px;
+	font-size: 14px;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0.1rem 0.5rem;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.2rem;
-    background: #EACDCF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin: 0.1rem 0.5rem;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-size: 1.2rem;
+	background: #eacdcf;
 }
 
 .slide-footer a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 
-.fa-envelope.colour, .fa-github.colour, .fa-linkedin-in.colour {
-    color: white;
-    transition: .4s ease;
+.fa-envelope.colour,
+.fa-github.colour,
+.fa-linkedin-in.colour,
+.fa-dribbble.colour,
+.fa-instagram.colour {
+	color: white;
+	transition: .4s ease;
 }
 
 break {
-    flex-basis: 100%;
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
+	flex-basis: 100%;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
 }
 
 .tooltip {
-    font-family: 'Fira Sans Condensed', sans-serif;
+	font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 /*--------- Responsive ---------*/
 
 @media screen and (max-width: 1240px) {
-    .container1-paragraph {
-        max-width: 400px;
-    }
+	.container1-paragraph {
+		max-width: 400px;
+	}
 
-    .slide-container1, .card-container1 {
-        position: absolute;
-        top: 30%;
-        left: 15%;
-    }
+	.slide-container1,
+	.card-container1 {
+		position: absolute;
+		top: 30%;
+		left: 15%;
+	}
 
-    .profile-picture {
-        height: 250px;
-    }
+	.profile-picture {
+		height: 250px;
+	}
 }
 
 @media screen and (max-width: 1230px) {
-    ol.carousel-indicators {
-        left: 20%;
-    }
+	ol.carousel-indicators {
+		left: 20%;
+	}
 
-    .card {
-        width: 300px;
-        height: 350px;
-    }
+	.card {
+		width: 300px;
+		height: 350px;
+	}
 }
 
 @media screen and (max-width: 1050px) {
-    .card {
-        width: 250px;
-        height: 350px;
-    }
+	.card {
+		width: 250px;
+		height: 350px;
+	}
 }
 
 @media screen and (max-width: 850px) {
-    .container1-paragraph {
-        font-size: 16px;
-        max-width: 280px;
-    }
+	.container1-paragraph {
+		font-size: 16px;
+		max-width: 280px;
+	}
 
-    .card {
-        width: 200px;
-        height: 300px;
-    }
+	.card {
+		width: 200px;
+		height: 300px;
+	}
 
-    .card-title {
-        font-size: 24px;
-    }
+	.card-title {
+		font-size: 24px;
+	}
 
-    .card-text {
-        font-size: 14px;
-    }
+	.card-text {
+		font-size: 14px;
+	}
 
-    .slide-heading {
-        left: 33%;
-    }
+	.slide-heading {
+		left: 33%;
+	}
 
-    .contact-container {
-        left: 40%;
-    }
+	.contact-container {
+		left: 40%;
+	}
 }
 
 @media screen and (max-width: 750px) {
-    .profile-picture {
-        display: none;
-    }
+	.profile-picture {
+		display: none;
+	}
 
-    .container1-paragraph {
-        font-size: 18px;
-        max-width: 400px;
-    }
+	.container1-paragraph {
+		font-size: 18px;
+		max-width: 400px;
+	}
 
-    ol.carousel-indicators {
-        left: 10%;
-    }
+	ol.carousel-indicators {
+		left: 10%;
+	}
 
-    ol.carousel-indicators li {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+	ol.carousel-indicators li {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
 
 @media screen and (max-width: 700px) {
-    .container1-paragraph {
-        font-size: 16px;
-        max-width: 300px;
-    }
+	.container1-paragraph {
+		font-size: 16px;
+		max-width: 300px;
+	}
 
-    .card-img-top {
-        display: none;
-    }
+	.card-img-top {
+		display: none;
+	}
 
-    .card {
-        height: 200px;
-    }
+	.card {
+		height: 200px;
+	}
 
-    .card-container1 {
-        top: 20%;
-        left: 30%
-    }
+	.card-container1 {
+		top: 20%;
+		left: 30%;
+	}
 
-    .card-container2 {
-        top: 55%;
-        left: 30%;
-    }
+	.card-container2 {
+		top: 55%;
+		left: 30%;
+	}
 }
 
 @media screen and (max-width: 650px) {
-    .container1-paragraph {
-        font-size: 16px;
-        max-width: 300px;
-    }
+	.container1-paragraph {
+		font-size: 16px;
+		max-width: 300px;
+	}
 
-    .slide-heading {
-        left: 30%;
-    }
+	.slide-heading {
+		left: 30%;
+	}
 }
 
 @media screen and (max-width: 520px) {
-    ol.carousel-indicators {
-        left: 10%;
-    }
+	ol.carousel-indicators {
+		left: 10%;
+	}
 
-    ol.carousel-indicators li {
-        margin-left: 4px;
-        margin-right: 4px;
-        font-size: 14px;
-    }
+	ol.carousel-indicators li {
+		margin-left: 4px;
+		margin-right: 4px;
+		font-size: 14px;
+	}
 
-    .logo-image {
-        max-height: 70px;
-    }
+	.logo-image {
+		max-height: 70px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-    .container1-paragraph {
-        font-size: 14px;
-        max-width: 250px;
-    }
+	.container1-paragraph {
+		font-size: 14px;
+		max-width: 250px;
+	}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 20px;
-        height: 20px;
-    }
+	.carousel-control-prev-icon,
+	.carousel-control-next-icon {
+		width: 20px;
+		height: 20px;
+	}
 
-    .slide-container1 h1 {
-        font-size: 26px;
-    }
-    
-    .full-name {
-        font-size: 30px;
-    }
-    
-    .carousel-control-next,
-    .carousel-control-prev {
-        height: 100px;
-        top: 40%;
-    }
+	.slide-container1 h1 {
+		font-size: 26px;
+	}
 
-    .card-container1, .card-container2 {
-        left: 20%
-    }
+	.full-name {
+		font-size: 30px;
+	}
 
-    .slide-heading {
-        left: 20%;
-    }
+	.carousel-control-next,
+	.carousel-control-prev {
+		height: 100px;
+		top: 40%;
+	}
 
-    .contact-container {
-        left: 35%;
-    }
+	.card-container1,
+	.card-container2 {
+		left: 20%;
+	}
+
+	.slide-heading {
+		left: 20%;
+	}
+
+	.contact-container {
+		left: 35%;
+	}
 }
